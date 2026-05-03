@@ -83,7 +83,7 @@ function DotGrid() {
           const dist = Math.sqrt((x - w / 2) ** 2 + (y - h / 2) ** 2)
           const wave = Math.sin(dist * 0.007 - time * 0.5) * 0.5 + 0.5
           const r = 0.8 + wave * 1.4
-          const a = 0.06 + wave * 0.1
+          const a = 0.10 + wave * 0.16
           ctx.beginPath()
           ctx.arc(x, y, r, 0, Math.PI * 2)
           ctx.fillStyle = `rgba(15,15,14,${a})`
@@ -127,7 +127,7 @@ function Nav() {
     >
       <nav className="max-w-6xl mx-auto px-6 sm:px-10 py-5 flex items-center justify-between">
         {/* Logo — all caps Cormorant SC, Bodoni-style */}
-        <a href="#" className="font-sc text-sm tracking-[0.18em] font-medium select-none">
+        <a href="#" className="font-sc text-base tracking-[0.18em] font-medium select-none text-ink">
           CIPRIANI DESIGN
         </a>
 
@@ -136,7 +136,7 @@ function Nav() {
             <a
               key={link.href}
               href={link.href}
-              className="label hover:text-ink transition-colors duration-300"
+              className="font-sc text-sm tracking-[0.12em] text-ink/70 hover:text-ink transition-colors duration-300"
             >
               {link.label}
             </a>
