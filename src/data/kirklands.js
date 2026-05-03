@@ -81,6 +81,12 @@ export const kirklandsLongForm = {
         'Above the components sat content models. PLPs needed to flex between editorial collections, faceted browse, and personalized rails. PDPs needed to express variation, store availability, and pickup options without burying the buy button. Each model was designed once and reused everywhere.',
         "I designed and coded much of the front end myself, working alongside engineering. Designing in the browser kept the system honest — type that looked right in Figma had to survive real product data, real image crops, and real mobile constraints. Shipping the code I'd designed shortened the loop from weeks to hours.",
       ],
+      figure: {
+        src: '/images/kirklands-flatware.jpg',
+        alt: 'Category browse with faceted filtering',
+        caption: 'Category browse · faceted content model',
+        side: 'right',
+      },
     },
     {
       id: 'process-grid',
@@ -89,9 +95,6 @@ export const kirklandsLongForm = {
       columns: 3,
       items: [
         { src: '/images/kirklands-mobile.jpg', alt: 'Mobile-first templates', caption: 'Mobile-first PDP templates' },
-        { src: '/images/kirklands-flatware.jpg', alt: 'Category browse', caption: 'Category browse · faceted system' },
-        { src: '/images/kirklands-wgd.jpg', alt: 'Wedding gift destination', caption: 'Editorial merchandising surface' },
-        { src: '/images/kirklands-omni.jpg', alt: 'Omnichannel pickup', caption: 'Omnichannel pickup · BOPIS surface' },
         { placeholder: true, label: 'System diagram', caption: 'BOPIS / curbside data flow' },
         { placeholder: true, label: 'Wireframe', caption: 'Mobile checkout flow' },
       ],
@@ -107,6 +110,12 @@ export const kirklandsLongForm = {
         "Mobile-first meant convincing merchants to design assortments, photography, and copy for a phone screen — not the desktop hero shot they'd been making for a decade. Omnichannel meant convincing store operations that the website could send work to their associates without breaking labor models. Personalization meant convincing IT to invest in the data plumbing before the visible payoff.",
         'I spent as much time in roadmap reviews, exec readouts, and cross-functional working sessions as I did in design tools. Every bet got reframed for a different audience: the merchant story, the operator story, the engineering story, the board story. The design work shipped because the organization was ready for it to ship.',
       ],
+      figure: {
+        src: '/images/kirklands-wgd.jpg',
+        alt: 'Wedding gift destination editorial surface',
+        caption: 'Editorial merchandising · the merchant story made visible',
+        side: 'left',
+      },
     },
     {
       id: 'pullquote',
@@ -133,6 +142,12 @@ export const kirklandsLongForm = {
         "When the pandemic closed stores in March 2020, the work that had felt like a slow-burn investment became table stakes overnight. Customers who'd never used buy-online-pickup-in-store needed it that week. Curbside went from a strategic option to the only option. Shop-your-store became the only way to extend a closed store's catalog to the people who couldn't enter it.",
         'Digital revenue accelerated from roughly $70M to nearly $200M annually. The redesign, the omnichannel buildout, and the personalization investments compounded — each one more valuable because the others existed.',
       ],
+      figure: {
+        src: '/images/kirklands-omni.jpg',
+        alt: 'Omnichannel pickup interface',
+        caption: 'BOPIS · the surface that was waiting for March 2020',
+        side: 'right',
+      },
     },
   ],
 

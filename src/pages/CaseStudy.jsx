@@ -162,7 +162,7 @@ export default function CaseStudy({ slug }) {
       <MetaStrip meta={lf.meta} />
       <SectionNav sections={navSections} activeId={activeId} />
 
-      <div className="max-w-3xl xl:max-w-4xl mx-auto px-6 sm:px-10 py-10 sm:py-16">
+      <div className="max-w-3xl lg:max-w-5xl xl:max-w-6xl mx-auto px-6 sm:px-10 py-10 sm:py-16">
         {sections.map((block) => (
           <CaseStudySection key={block.id} block={block} />
         ))}

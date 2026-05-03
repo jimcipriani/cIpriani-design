@@ -20,16 +20,46 @@ function SectionHeader({ label, heading, lede }) {
 }
 
 function NarrativeBlock({ block }) {
+  const fig = block.figure
+  const side = fig?.side === 'left' ? 'left' : 'right'
+  const prose = (
+    <div className="max-w-2xl space-y-5">
+      {(block.body || []).map((p, i) => (
+        <p key={i} className="font-display font-light text-lg sm:text-xl leading-relaxed text-ink/80">
+          {p}
+        </p>
+      ))}
+    </div>
+  )
+  const figure = fig && (
+    <figure className="m-0">
+      <div className="overflow-hidden bg-faint">
+        <img
+          src={fig.src}
+          alt={fig.alt || ''}
+          className="case-study-img w-full h-auto object-cover block"
+          loading="lazy"
+        />
+      </div>
+      {fig.caption && <figcaption className="fig-caption text-left ml-0">{fig.caption}</figcaption>}
+    </figure>
+  )
+
   return (
     <FadeIn>
       <SectionHeader label={block.label} heading={block.heading} lede={block.lede} />
-      <div className="max-w-2xl space-y-5">
-        {(block.body || []).map((p, i) => (
-          <p key={i} className="font-display font-light text-lg sm:text-xl leading-relaxed text-ink/80">
-            {p}
-          </p>
-        ))}
-      </div>
+      {fig ? (
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-start">
+          <div className={side === 'left' ? 'lg:col-span-5 lg:order-1' : 'lg:col-span-7 lg:order-1'}>
+            {side === 'left' ? figure : prose}
+          </div>
+          <div className={side === 'left' ? 'lg:col-span-7 lg:order-2' : 'lg:col-span-5 lg:order-2'}>
+            {side === 'left' ? prose : figure}
+          </div>
+        </div>
+      ) : (
+        prose
+      )}
     </FadeIn>
   )
 }
