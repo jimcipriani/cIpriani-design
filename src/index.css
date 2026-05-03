@@ -84,3 +84,11 @@ body {
   text-align: right;
   margin-top: 0.5rem;
 }
+
+/* Case study long-form layer */
+.cs-section {
+  scroll-margin-top: 5rem;
+}
+.cs-section + .cs-section {
+  border-top: 0.5px solid var(--color-stone);
+}
