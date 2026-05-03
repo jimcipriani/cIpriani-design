@@ -19,6 +19,21 @@ import { kirklandsLongForm } from './kirklands'
 /** @type {CaseStudy[]} */
 export const CASE_STUDIES = [
   {
+    id: 'kirklands',
+    client: "Kirkland's Home",
+    year: '2017–2021',
+    role: 'Ecommerce Design Lead',
+    tagline: "Modernizing a publicly traded home retailer's digital experience",
+    description:
+      'I led ecommerce design for Kirkland\'s Home, rethinking the shopping experience from the ground up. A visual refresh, mobile-first redesign, and personalization strategy that moved logged-in users from 3–4% to 15–18%. Omnichannel features — BOPIS, curbside pickup, shop-your-store — launched ahead of the 2020 pandemic.',
+    image: '/images/kirklands-banner.jpg',
+    detail: '/images/kirklands-2018.jpg',
+    detail2: '/images/kirklands-2020.jpg',
+    tags: ['Ecommerce', 'Omnichannel', 'Personalization', 'Public Co.'],
+    caption: 'Homepage redesign before/after — Kirklands.com, 2018 → 2020',
+    longForm: kirklandsLongForm,
+  },
+  {
     id: 'providertrust',
     client: 'ProviderTrust',
     year: '2024–Present',
@@ -45,21 +60,6 @@ export const CASE_STUDIES = [
     detail2: '/images/fw-mobile.png',
     tags: ['Co-Founder', 'UX Design', 'Sports Tech', 'Mobile-First'],
     caption: 'Referee assessment & match operations — FairWhistle, 2023',
-  },
-  {
-    id: 'kirklands',
-    client: "Kirkland's Home",
-    year: '2017–2021',
-    role: 'Ecommerce Design Lead',
-    tagline: "Modernizing a publicly traded home retailer's digital experience",
-    description:
-      'I led ecommerce design for Kirkland\'s Home, rethinking the shopping experience from the ground up. A visual refresh, mobile-first redesign, and personalization strategy that moved logged-in users from 3–4% to 15–18%. Omnichannel features — BOPIS, curbside pickup, shop-your-store — launched ahead of the 2020 pandemic.',
-    image: '/images/kirklands-banner.jpg',
-    detail: '/images/kirklands-2018.jpg',
-    detail2: '/images/kirklands-2020.jpg',
-    tags: ['Ecommerce', 'Omnichannel', 'Personalization', 'Public Co.'],
-    caption: 'Homepage redesign before/after — Kirklands.com, 2018 → 2020',
-    longForm: kirklandsLongForm,
   },
 ]
 
