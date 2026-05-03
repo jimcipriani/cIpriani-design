@@ -1,14 +1,15 @@
 @import "tailwindcss";
 
 @theme {
-  --color-ink: #0a0a0a;
-  --color-paper: #f5f2ed;
-  --color-stone: #d4cfc7;
-  --color-muted: #8a8580;
-  --color-accent: #c44b28;
-  --color-surface: #1a1917;
-  --color-surface-light: #f0ece6;
-  --font-display: "Instrument Serif", Georgia, serif;
+  --color-ink: #0f0f0e;
+  --color-paper: #f7f4ef;
+  --color-stone: #c8c3bb;
+  --color-muted: #7a756e;
+  --color-faint: #e8e3db;
+  --color-accent: #b03a1e;
+  --color-surface: #161613;
+  --font-display: "Cormorant", Georgia, serif;
+  --font-sc: "Cormorant SC", Georgia, serif;
   --font-body: "DM Sans", system-ui, sans-serif;
 }
 
@@ -25,28 +26,33 @@ body {
 }
 
 ::selection {
-  background-color: var(--color-accent);
-  color: white;
+  background-color: var(--color-ink);
+  color: var(--color-paper);
 }
 
-.font-display {
-  font-family: var(--font-display);
-}
+.font-display { font-family: var(--font-display); }
+.font-sc { font-family: var(--font-sc); }
 
-.text-balance {
-  text-wrap: balance;
+/* Tufte-style hairline rule */
+.rule-top { border-top: 0.5px solid var(--color-ink); }
+.rule-bottom { border-bottom: 0.5px solid var(--color-ink); }
+.rule-top-muted { border-top: 0.5px solid var(--color-stone); }
+
+/* Sidenote-style labels — Tufte small caps */
+.label {
+  font-family: var(--font-sc);
+  font-size: 0.6875rem;
+  letter-spacing: 0.08em;
+  color: var(--color-muted);
+  font-weight: 400;
 }
 
 @keyframes grain {
   0%, 100% { transform: translate(0, 0); }
   10% { transform: translate(-5%, -10%); }
-  20% { transform: translate(-15%, 5%); }
   30% { transform: translate(7%, -25%); }
-  40% { transform: translate(-5%, 25%); }
   50% { transform: translate(-15%, 10%); }
-  60% { transform: translate(15%, 0%); }
   70% { transform: translate(0%, 15%); }
-  80% { transform: translate(3%, 35%); }
   90% { transform: translate(-10%, 10%); }
 }
 
@@ -57,15 +63,24 @@ body {
   width: 200%;
   height: 200%;
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.4'/%3E%3C/svg%3E");
-  opacity: 0.03;
+  opacity: 0.04;
   pointer-events: none;
   animation: grain 8s steps(10) infinite;
 }
 
 .case-study-img {
-  transition: transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+  transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.case-study-card:hover .case-study-img {
+  transform: scale(1.025);
 }
 
-.case-study-card:hover .case-study-img {
-  transform: scale(1.03);
+/* Tufte figure caption style */
+.fig-caption {
+  font-family: var(--font-sc);
+  font-size: 0.65rem;
+  letter-spacing: 0.05em;
+  color: var(--color-muted);
+  text-align: right;
+  margin-top: 0.5rem;
 }
