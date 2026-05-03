@@ -14,7 +14,7 @@ const CASE_STUDIES = [
     year: '2024–Present',
     role: 'Product Manager',
     tagline: 'Automating medical license compliance at scale',
-    description: 'At ProviderTrust I lead product management for a license automation system that transforms a deeply complex process — managing thousands of data points across clients, licensing boards, and platforms. The work spans self-service onboarding flows, drag-and-drop rules management, discipline mapping that bridges incompatible data vocabularies, and analytics that surface compliance risk before it becomes a problem.',
+    description: 'On the product team at ProviderTrust, I work on a license automation system that transforms a deeply complex process — managing thousands of data points across clients, licensing boards, and platforms. The work spans self-service onboarding flows, drag-and-drop rules management, discipline mapping that bridges incompatible data vocabularies, and analytics that surface compliance risk before it becomes a problem.',
     image: '/images/license-composite.jpg',
     detail: '/images/license-rules.jpg',
     detail2: '/images/license-detail.jpg',
@@ -356,7 +356,7 @@ function AboutSection() {
                 I'm an AI-native product manager and designer based in Nashville, TN. I bring decades of experience in strategy, design, and development — spanning startups, publicly traded companies, and everything in between.
               </p>
               <p className="font-display font-light text-lg leading-relaxed text-paper/70">
-                Currently I lead product management at <span className="text-paper/90">ProviderTrust</span>, where I'm building healthcare compliance automation tools, and I continue as co-founder and UX lead at <span className="text-paper/90">FairWhistle</span>, a sports technology platform for professional soccer.
+                I'm on the product team at <span className="text-paper/90">ProviderTrust</span>, working on healthcare compliance automation tools, and I continue as co-founder and UX lead at <span className="text-paper/90">FairWhistle</span>, a sports technology platform for professional soccer.
               </p>
               <p className="font-display font-light text-lg leading-relaxed text-paper/70">
                 I use AI as a design and product multiplier — accelerating research synthesis, prototyping, and solution-space exploration. My approach is informed by data, shaped by user empathy, and executed with precision.
